@@ -1,4 +1,4 @@
-![Banner](./images/Proyecto 4-UDD Fullstack.png)
+![Banner](./images/bannerppal.png)
 # Módulo 4 - Proyecto 4
 ## ¡Bienvenidos al proyecto "Reservas Hoteleras"!
 
