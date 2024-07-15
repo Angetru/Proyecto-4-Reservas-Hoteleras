@@ -28,7 +28,7 @@ Y las características en detalle:
 
   ****
 
-### 3. Desarrollo de proyecto
+### 2. Desarrollo de proyecto
  Se incia con la estructura base del proyecto, con el fin de mantener esta guía durante el desarrollo de la aplicación, a continuación se muestra un extracto:
  
  ![img arquitectura proyecto](./images/arquitecturaproyecto.png)
@@ -67,12 +67,50 @@ Y las características en detalle:
  
  ![img routes](./images/routes.png)
    
-*[Se incluye link para visualización del código](./index.html)*
+ Sobre la documentación de las API, utilizando insomnia, se crea en base environment la url base que se utilizará durante la ejecución del proyecto: 
+ 
+ ![img base](./images/baseinsomnia.png)
 
+ Posterior se ejecuta para todas las reservas y reservas por ID, en base a GET para ambos:
+ 
+ ![img todas las reservas](./images/todasreservasinsomnia.png)
+
+ ![img todas las reservas](./images/idreservainsomnia.png)
+
+ Luego se habilita la búsqueda por hotel, fechas, cantidad de huéspedes, tipo de habitación y estado, todos en base a GET:
+  
+ ![img hotel](./images/porhotelinsomnia.png)
+
+ ![img hotel](./images/fechasinsomnia.png)
+
+ ![img hotel](./images/huespedesinsomnia.png)
+
+ ![img hotel](./images/habitacioninsomnia.png)
+ 
+ ![img hotel](./images/estadoinsomnia.png)
+
+ Se crea la actualización de una reserva por medio de PATCH:
+
+ ![img hotel](./images/actualizarinsomnia.png)
+
+ Se habilita la creación de una reserva, por medio de POST:
+ 
+ ![img hotel](./images/crearinsomnia.png)
+ 
+ En base a lo anterior se verifica si aparece en la lista al llamar todas las reservas, lo cual es correcto:
+ 
+ ![img hotel](./images/crearinsomnia_verificación.png)
+
+ Por último se crea la opción de eliminación, por medio de DELETE:
+
+ ![img hotel](./images/eliminarinsomnia.png)
+ 
+
+ 
   ****
   
-  ### 5. Conclusiones
- Para la preparación del proyecto de reservas hotekeras, se dio inicio con la estructura base propuesta, la cual se fue modificando en base a los requerimientos necesarios a medida que se desarrollaba el código para el modelo, controlador y las rutas. Fue un proyecto desafiante debido a las operaciones requeridas, más aún con las fechas. Luego de varias iteracione sy revisiones se logró dar con el objetivo final del proyecto, además de incluir insomnia en el desarrollo, esto perimitiendo adquirir nuevos conocimientos sobre la herramienta.
+  ### 3. Conclusiones
+ Para la preparación del proyecto de reservas hotekeras, se dio inicio con la estructura base propuesta, la cual se fue modificando en base a los requerimientos necesarios a medida que se desarrollaba el código para el modelo, controlador y las rutas. Fue un proyecto desafiante debido a las operaciones requeridas, más aún con las fechas. Luego de varias iteraciones y  revisiones se logró dar con el objetivo final del proyecto, además de incluir insomnia en el desarrollo, esto perimitiendo adquirir nuevos conocimientos sobre la herramienta.
   ****
 *¡Gracias!*
 
