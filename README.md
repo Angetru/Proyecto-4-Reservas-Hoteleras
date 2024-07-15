@@ -31,7 +31,7 @@ Y las características en detalle:
 ### 3. Desarrollo de proyecto
  Se incia con la estructura base del proyecto, con el fin de mantener esta guía durante el desarrollo de la aplicación, a continuación se muestra un extracto:
  
- ![img arquitectura proyecto](./images/arqproyecto.png)
+ ![img arquitectura proyecto](./images/arquitecturaproyecto.png)
 
  Para los archivos .env y .gitignore se establecen los requerimientos necesarios para el desarrollo del proyecto, se muestra un extracto de ambos archivos:
 
