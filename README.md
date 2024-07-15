@@ -53,7 +53,7 @@ Y las características en detalle:
 
  Para la función de actualizar reservas, se incluyen parámetros de los cuales se pudiese actualizar por hotel, fechas de ingreso o egreso, así como tipo de habitación, cantidad de huéspedes, estado, nombre y mail:
  
- ![img actualizar Reservas](./images/actualizarReservas.png)
+ ![img actualizar Reservas](./images/actualizarReserva.png)
 
  Y para finalizar con las operaciones CRUD, se incluye la función para eliminar las reservas:
  
