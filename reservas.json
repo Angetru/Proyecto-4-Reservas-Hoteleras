@@ -1,0 +1,32 @@
+[
+    {
+        "hotel":"Hotel Tropical",
+        "fechaInicio":"2024-08-01",
+        "fechaFin":"2024-08-07",
+        "tipoHabitacion":"Single",
+        "numHuespedes":1,
+        "estado":"Pendiente",
+        "nombre":"Angeles Romero",
+        "email":"Anrom@gmail.com"
+    },
+    {
+        "hotel":"Hotel Tropical",
+        "fechaInicio":"2024-12-23",
+        "fechaFin":"2024-12-29",
+        "tipoHabitacion":"Doble",
+        "numHuespedes":2,
+        "estado":"Pendiente",
+        "nombre":"Gerardo Salas",
+        "email":"gesal@gmail.com"
+    },
+    {
+        "hotel":"Hotel Paraiso",
+        "fechaInicio":"2024-12-20",
+        "fechaFin":"2024-12-27",
+        "tipoHabitacion":"Cuadruple",
+        "numHuespedes":4,
+        "estado":"Pendiente",
+        "nombre":"Josefa Torres",
+        "email":"jotorres@gmail.com"
+    }
+]
