@@ -14,9 +14,7 @@
  Para este cuarto proyecto se solicita crear una aplicación de servicios CRUD para la industria hotelera, en específico para el proceso de gestión de reservas. Adicionalmentese incluye la documentación de la API, realizada por medio de Insomnia.
  Los requerimientos para este proyecto son:
 - Construcción de una aplicación para gestión de reservas hoteleras, involucrando las 4 operaciones CRUD, y 6 adicionales relacionadas con filtros, utilizando Node.js y Express.
-- Documentación de API, este punto era opcional,
-
-El segundo punto era opcional, sin embargo se ha incluido en este proyecto debido a la usabilidad.
+- Documentación de API, este punto era opcional, sin embargo se ha incluido en este proyecto debido a la usabilidad.
   
 Y las características en detalle:
 - Utilización de Node.js y Express
