@@ -4,80 +4,75 @@
 
 ## Tabla de Contenidos
 * [1. Desafío](#1-Desafío)
-* [2. Diseño de prototipado](#2-Diseño-de-prototipado)
-* [3. Desarrollo de proyecto](#3-Desarrollo-de-proyecto)
-* [4. Conclusiones](#4-Conclusiones)
+* [2. Desarrollo de proyecto](#3-Desarrollo-de-proyecto)
+* [3. Conclusiones](#4-Conclusiones)
 
 ****
 ## Desarrollo
 
 ### 1. Desafio
- Para este tercer proyecto se solicita crear un lansing page, que muestre productos y/o servicios. Se debe considerar las siguientes habilidades y conocimientos:
-- Prototipado simple
-- Etiquetas estándar HTML5
-- CSS, del cual se puede seleccionar:
-    a) Archivo index.css que incluya los estilos.
-    b) Archivo HTML con los estilos incluidos en el mismo archivo con la estiqueta <style></style>.
-    c) Usar un framework como TailwindCSS, Bootstrap o Bulma, que permita ejecutar clases CSS eficientemente.
-  
-Y los requisitos y entregables esperados, para UI, se detallan a continuación:
-- Desarrollo de prototipado simple
-- Aplicar HTML5 en todo el sitio
-- Aplicar estilos CSS
-- Incluir secciones (Header, Main, Section, Footer)
-- A modo opcional, Responsive Web Design (Mobile First Design con media queries)
-  
-  ****
-  
-### 2. Diseño de prototipado
- En base al desafío planteado, se realiza el diseño del prototipado del landing page con un formato simple en "draw.io". Para este caso se parte con la premisa de considerar como eje central la propuesta de un Blog de viajes. A continuación se muestra el diagrama del prototipado como estructura inicial para su posterior desarrollo de código en HTML y CSS:
- 
-  ![img prototipado](./images/prototipado.png)
+ Para este cuarto proyecto se solicita crear una aplicación de servicios CRUD para la industria hotelera, en específico para el proceso de gestión de reservas. Adicionalmentese incluye la documentación de la API, realizada por medio de Insomnia.
+ Los requerimientos para este proyecto son:
+- Construcción de una aplicación para gestión de reservas hoteleras, involucrando las 4 operaciones CRUD, y 6 adicionales relacionadas con filtros, utilizando Node.js y Express.
+- Documentación de API, este punto era opcional,
 
-****
+El segundo punto era opcional, sin embargo se ha incluido en este proyecto debido a la usabilidad.
+  
+Y las características en detalle:
+- Utilización de Node.js y Express
+- Incluir archivo .env y .gitignore
+- Utilizar una arquitectura de carpetas como se munestra a continuación:
+
+ ![img arquitecturacarpetas](./images/arquitectura.png)
+  
+
+  ****
 
 ### 3. Desarrollo de proyecto
- Se establecen las etiquetas de base en HTML, al inicio se aplican los links que permitan el funcionamiento de elementos que se aplicarán más adelante en el código y que permitirán que la página funcione eficientemente, y asi como la creación de "Header":
+ Se incia con la estructura base del proyecto, con el fin de mantener esta guía durante el desarrollo de la aplicación, a continuación se muestra un extracto:
  
- ![img codigo html inicio](./images/inicio_html.png)
- 
- Luego se crea la etiqueta "Nav" en base a bootstrap, el cual fue modificado para incluir logo, además de contenido y otros ajustes:
- 
- ![img codigo html nav](./images/nav.png)
+ ![img arquitectura proyecto](./images/arqproyecto.png)
 
- Posterior se crea la etiqueta "Main", se incluye una sección con videos y contenido principal:
- 
- ![img codigo html main](./images/main.png)
+ Para los archivos .env y .gitignore se establecen los requerimientos necesarios para el desarrollo del proyecto, se muestra un extracto de ambos archivos:
 
- Se incluye una sección de cards, con Bootstrap, en donde se agrega contenido e imagenes en relación al tema de viajes: 
+ ![img eng](./images/env.png)
  
- ![img codigo html cards](./images/cards.png)
+ ![img gitignore](./images/gitignore.png)
+ 
+ Para el archivo de Models, se procede con un constructor que indica los campos requeridos para este proyecto:
+ 
+ ![img reserva Model](./images/reservaModel.png)
 
- Para la sección de cierre, con la etiqueta "Footer", se incluye links de redes de contacto y numeración de páginas: 
+ Posterior se crea el código para el controller, al inicio se agregar un array que tiene 4 reservas guardadas como base, luego se agregaron las funciones necesarias para crear una reserva, se muestra un extracto a continuación:
  
- ![img codigo html footer](./images/footer.png)
+ ![img reserva Controller](./images/reservaController.png)
 
- Y para finalizar, se incluyen los scripts previo al cierre de la etiqueta de "Body":
+ A continuación dentro de ese mismo archivo, se crean los códigos para buscar todas las reservas y búsqueda de reservas por ID:
  
- ![img codigo html scripts](./images/cierre_scripts.png)
+ ![img todasReservas](./images/todasReservas.png)
+
+ Para la función de actualizar reservas, se incluyen parámetros de los cuales se pudiese actualizar por hotel, fechas de ingreso o egreso, así como tipo de habitación, cantidad de huéspedes, estado, nombre y mail:
+ 
+ ![img actualizar Reservas](./images/actualizarReservas.png)
+
+ Y para finalizar con las operaciones CRUD, se incluye la función para eliminar las reservas:
+ 
+ ![img eliminar reserva](./images/eliminarReserva.png)
+
+ Se crean las funciones específicas para filtrar por hotel, fechas, tipo de habitación, estado y número de huéspedes, a continuación se muestra un extracto:
+ 
+ ![img filtrados varios](./images/filtradosvarios.png)
+
+ Por último se crea el archivo de routes, con el fin de hacer las conexiones con el controller: 
+ 
+ ![img routes](./images/routes.png)
    
-*[Se incluye Link para visualización del código index.html](./index.html)*
+*[Se incluye link para visualización del código](./index.html)*
 
-  Para CSS, se establecen los estilos de base:
-  ![img codigo CSS](./images/CSS_inicio.png)
-
-  Al final se incluye media queries, mobile first design para aplicar los ajustes necesarios en la vista "mobile":
-  ![img codigo media](./images/media.png)
-
- *[Se incluye Link para visualización del código style.css](./style.css)*
-
- Adicionalmente se muestra un extracto del landing page y se desplegó en GitHub Pages para el Blog Solo Viajes: [Link GitHub Pages](https://angetru.github.io/Proyecto-3_Landing-page/)
- 
- ![img blog](./images/extracto_blog.png)
   ****
   
   ### 5. Conclusiones
- Para la preparación del landing page, se dio inicio con la estructura base, tomando como guía las etiquetas típicas de HTML. Durante la investigación, se visualizan diferentes elementos que permitían la modificación de letras, implementación de navbar ajustables, asi como otros elementos que permitieron hacer una página más interesante a nivel visual, desde el punto de vista UI.
+ Para la preparación del proyecto de reservas hotekeras, se dio inicio con la estructura base propuesta, la cual se fue modificando en base a los requerimientos necesarios a medida que se desarrollaba el código para el modelo, controlador y las rutas. Fue un proyecto desafiante debido a las operaciones requeridas, más aún con las fechas. Luego de varias iteracione sy revisiones se logró dar con el objetivo final del proyecto, además de incluir insomnia en el desarrollo, esto perimitiendo adquirir nuevos conocimientos sobre la herramienta.
   ****
 *¡Gracias!*
 
